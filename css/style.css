@@ -55,8 +55,12 @@ body{
 }
 header{
 width: 100%;
-position: fixed;
 z-index: 8;
+}
+@media (min-width:768px){
+    header{
+    position:fixed;
+    }
 }
 @media (max-width:767px){
     header{
@@ -106,6 +110,7 @@ header nav{
         color: black;
         transition: 0.2s;
         overflow: hidden;
+       z-index: 99999;
     }
    header .ul_items li{
         padding: 15px;
